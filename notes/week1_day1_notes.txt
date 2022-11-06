@@ -1,0 +1,128 @@
+IDE -> Integrated Development Environment -> Used to write, debug and execute code
+
+Class -> Blueprint / template having common features of similar objects
+
+Object -> instance of a class
+
+Action / Behaviuor -> Method -> used to create reusable code
+
+Data / Information -> Variables
+
+Class -> Contains variables and methods
+
+workspace -> folder, Used to keep the project codes
+Project -> All the programs related to particular application /project will be saved under a 
+particular folder
+
+package -> folder to have all the java programs / class
+
+To save all the java programs:
+src/main/java -> Development code
+src/test/java -> Test code
+
+Other than java files : eg xlsx, txt, json, properties, config
+src/main/resources
+src/test/resources
+
+
+package name -> should be starting with lowercase; should be an alphabet
+
+
+
+ClassName (Pascal Notation)-> Starts with uppercase; When we have multiple words, each word should start with upper case
+
+
+methodName(camelCase) -> Starts with lower; when we have multiple words, from the second words onwards start with upper case
+
+Shortcuts:
+type methodName -> cntrl+spacebar; tap enter key
+type syso -> cntrl+spacebar
+type main -> cntrl+spacebar; tap enter key
+
+main():
+To execute a java program -> main method is mandatory
+Java execution starts from the main method
+
+
+objectName -> camelCase naming standard
+
+
+Variable -> Is a container to store data / information
+
+Two Types of Variables:
+------------------------
+1. Global Variables -> Declared inside class and out of all methods. Can be used by all the methods
+2. Local Variables -> Declared within a method
+
+
+800000 -> number
+brandName -> Hyundai
+fuelCapacity -> 25.5
+isPuncture ->
+
+
+Primitive Datatypes
+-------------------
+byte -> 1 byte -> 8 bits
+short -> 2 bytes
+int -> 4 bytes
+long -> 8 bytes
+
+float -> 4 bytes
+double -> 8 bytes
+
+
+Non-Primitive Datatypes
+------------------------
+String -> used to store sequence of character
+			"";
+	      Class		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
