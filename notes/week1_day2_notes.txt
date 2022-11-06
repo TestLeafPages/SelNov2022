@@ -1,0 +1,6 @@
+Arguments are used to pass input to a method
+
+void -> Doing some action. Not returning any output
+
+Array -> Data structure used to save multiple data of same datatype in single variable
+		Effective memory management
