@@ -1,0 +1,162 @@
+Locators (8):
+1. id --> attribute --> 1st priority (if id contains changing numbers, do not use it)
+2. name --> attribute --> 2nd Priority (no duplicates)
+3. linkText --> a (anchor) tag with text --> 3rd Priority
+4. className --> attribute --> 4th priority (no duplicates, if it has
+spaces in between words, ignore it)
+5. tagName --> html, button, input
+6. partial linkText --> a (anchor) tag with part of text
+7. xPath
+
+xPath - xml Path (index starts with 1)
+
+1. Absolute xPath
+	- it starts with '/'
+	- tagName is mandatory
+	- It starts from the root tagName
+	
+/html/body/div[2]/div/div/form/p/input
+
+2. Relative xPath
+	- it starts with '//'
+	- tagName is mandatory
+	- directly start from element tagName
+	
+//tagName
+Ex: //input
+
+Basic xPaths:
+1. Attribute based xPath:
+
+//tagName[@attributeName='attributeValue']
+
+using multiple attributes
+//tagName[@attributeName='attributeValue'][@attributeName='attributeValue']
+//tagName[@attributeName='attributeValue'][text()='textValue']
+
+ex: //input[@id='username']
+//input[@id='username'][@name='USERNAME']
+
+2. Text based xPath
+
+//tagName[text()='textValue']
+
+ex: //label[text()='Username']
+
+3. Partial attribute based xPath:
+
+//tagName[contains(@attributeName,'partialAttributeValue')]
+
+ex: //input[contains(@id,'user')]
+	//input[contains(@name,'USER')]
+
+4. Partial text based xPath:
+
+//tagName[contains(text(),'textValue')]
+
+ex: //label[contains(text(),'User')]
+
+5. Index based xPath:
+
+(//tagName[@attributeName='attributeValue'])[index]
+
+ex: (//input[@class='inputLogin'])[2]
+
+Don't use beyond 5
+
+
+Advanced xPaths:
+1. Parent to child:
+
+basic xPath for parent/childTagName[@attributeName='attributeValue']
+
+ex: 
+//p[@class='top']/input
+//p[@class='top']/input[@name='USERNAME']
+(//p[@class='top']/input)[1]
+
+
+//p[@class='top']/input[@name='USERNAME']
+
+2.Child to Parent:
+
+basic xPath for child/parent::parentTagName
+
+ex: 
+//input[@id='username']/parent::p
+//label[text()='Username']/parent::p
+
+3. Grandparent to grandChild:
+
+basic xPath for grandParent//grandChildTagName
+
+ex:
+//form[@id='login']//input
+//form[@id='login']//input[@id='username']
+(//form[@id='login']//input)[2]
+
+4. grandChild to grandParent:
+
+basic xPath for grandChild/ancestor::grandParentTagName
+
+ex:
+//label[text()='Username']/ancestor::form
+
+5. Elder Sibling to Younger Sibling:
+
+basic xPath for elderSibling/following-sibling::youngerSiblingTagName
+
+ex:
+//label[text()='Username']/following-sibling::input
+
+6. Younger Sibling to Elder Sibling:
+
+basic xPath for youngerSibling/preceding-sibling::elderSiblingTagName
+
+ex:
+//input[@id='username']/preceding-sibling::label
+
+7. Elder Cousin to Younger Cousin:
+
+basic xPath for elderCousin/following::youngerCousinTagName
+
+ex:
+//label[text()='Username']/following::label
+
+8. Younger Cousin to Elder Cousin
+
+basic xPath of youngerCousin/preceding::elderCousinTagName
+
+ex:
+//input[@id='password']/preceding::label
+//input[@id='password']/preceding::label[text()='Username']
+
+
+First Resulting Lead:
+//div[@class='x-grid3-cell-inner x-grid3-col-partyId']/a
+
+Myntra:
+"//input[@value='Flying Machine']"
+//label[text()='Flying Machine']/input
+
+
+String brand = "Flying Machine"
+
+
+"//input[@value='" + brand + "']"
+
+"//input[@value='Rodster']"
+
+SalesForce:
+//span[text()='Subject']/parent::label/following-sibling::input
+
+
+Document Object Model (DOM)
+
+Thread.sleep(7000)
+
+Cab - 9 am - 9:10 am
+		- 9:04 am
+		
+Implicit Wait
+Explicit Wait

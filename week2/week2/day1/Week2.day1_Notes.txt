@@ -1,0 +1,73 @@
+Selenium: Jason Huggins (2004)
+
+WebDriver: Siemen Stewards (2007)
+
+Selenium WebDriver (v3) - 2009
+
+
+QTP - Commercial (very costly)
+	- Supports Multiple applications
+	- VBScript/ JavaScript
+	- Doesn't provide any support for linux/ mac
+Selenium - Open Source (no liscence cost)
+		 - Only Web based applications
+		 - Java, Python, Ruby, Pearl, C#, etc.,
+		 - Works with Windows, Mac, linux
+		 
+Selenium WebDriver:
+
+- Can automate only web applications
+- It can talk to different browsers (chrome, firefox, edge, IE, safari, Opera)
+- Works with Windows, Mac, linux, Android
+
+Cannot do?
+	- Can we automate excel sheet? No! (Java libraries --> Apache POI)
+	- Can we automate mainframe applications? No! (Java libraries --> WinAppDriver)
+	- Can it talk to database? No! (Java libraries --> JDBC)
+	- Can it automate mobile based apps? No! (Java libraries --> Appium)
+	- Can we perform performance testing? No! (JMeter/ Gating/ Load Runner)
+	
+Opensource tools --> browsers !!
+
+1. Selenium WebDriver - More than 40% market share
+2. Puppeteer - Chrome/ Js
+3. Cypress - Chrme, Firefox / Js
+4. Webdriver.io - Js
+5. Playwright
+
+
+TagName (purple) - html, input, button
+Attributes (brown) - information about that element
+Attribute values (blue) - details about that attribute
+Text (black) - In between the tags
+
+
+Locators (8):
+1. id --> attribute --> 1st priority (if id contains changing numbers, do not use it)
+2. name --> attribute --> 2nd Priority (no duplicates)
+3. linkText --> a (anchor) tag with text --> 3rd Priority
+4. className --> attribute --> 4th priority (no duplicates, if it has
+spaces in between words, ignore it)
+
+ClassRoom:
+1. Launch http://leaftaps.com/opentaps
+2. Enter username as DemoSalesManager
+3. Enter password as crmsfa
+4. Click on Login
+5. Click on CRM/SFA
+6. Click on Leads
+7. Click on Create Lead
+8. Enter CompanyName
+9. Enter FirstName
+10. Enter LastName
+11. Click on CreateLead button
+
+
+sendkeys("")
+click()
+clear()
+getText()
+getAttribute("value")
+isEnabled()
+isSelected()
+isDisplayed()
