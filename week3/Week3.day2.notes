@@ -1,0 +1,77 @@
+Array:
+	- Fixed size
+	- Memory is not effectively used for the unused indices
+
+int[] arr;
+
+Collections:
+	- Dynamic array (size can grow or shrink)
+	- Automated incremented/ decremented size
+	- Collections can hold only classes (No Primitive data types - 
+										Only Wrapper Classes)
+	
+1. List
+	- Interface
+	- It can hold duplicate data
+	- Order: FIFO
+	- Based on Index
+	
+Implementation:
+	- ArrayList
+	- LinkedList
+	
+List<E> list = new ArrayList<E>();
+
+Methods in List:
+
+1. size()		--> Number of items inside the list
+2. add(Class item) --> Item will get added to the list (last index + 1)
+3. remove(Class item)/ remove(int index) --> Item will get removed
+4. get(int index)  --> retrieve the iem from the given index
+5. clear()		--> remove all the items from the list
+6. isEmpty()	--> if empty, it would True else False
+7. contains(Class item) --> to check if the item is present in the list
+	
+
+When not to use ArrayList?
+	- insertion/ removal from the list in between
+	
+2. Set
+	- Interface
+	- It cannot hold duplicate data
+	
+Implementation:
+1. HashSet			--> Based on Hashing algorithm (random order)
+2. TreeSet			--> Based on ASCII order (ascending order)
+3. LinkedHashSet	--> Order of insertion
+
+Methods:
+1. size()		--> Number of items inside the set
+2. add(Class item) --> Item will get added to the set (last index + 1)
+3. remove(Class item)/ remove(int index) --> Item will get removed
+4. clear()		--> remove all the items from the set
+5. isEmpty()	--> if empty, it would True else False
+6. contains(Class item) --> to check if the item is present in the set
+
+X. get(int index)  --> retrieve the iem from the given index
+
+3. Map
+
+	- Interface
+	- Key: Value
+	- Key is always unique
+	- Value can be duplicate
+	- Key + Value ==> Entry
+	
+Implementation:
+1. HashMap			--> Based on Hashing algorithm (random order)
+2. TreeMap			--> Based on ASCII order (ascending order)
+3. LinkedHashMap	--> Order of insertion
+
+Methods:
+1. size()		--> Number of entries inside the map
+2. put(Class key, Class value)	--> it will add the entry to the map
+3. remove(Class key)	--> Entry will get removed
+4. clear() 		--> remove all entries
+5. get(Class key)	--> returns the value based on key
+6. containsKey(Class key)	--> returns True or False

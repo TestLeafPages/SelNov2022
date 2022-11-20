@@ -1,0 +1,89 @@
+Java OOPs:
+
+OOPs - Object Oriented Programming
+	- programming model is based on concept of "Objects"
+	- It can contain data (variables) and logic (methods)
+	
+4 Concepts:
+1. Abstraction
+2. Inheritance
+3. Polymorphism
+4. Encapsulation
+
+
+Inheritance:
+It is the concept where building relationship between 2 simillar classes
+(parent and child)
+
+	- to have common functions/ avoid duplicate implementation/ reduce code !
+	
+
+GrandFather - 2 Houses
+Father - 1 House
+Me - 1 House
+
+Parent class/ Super Class/ Base class
+Child class/ Sub class/ derived class
+
+ChildClass extends ParentClass
+
+Types:
+1. Single Inheritance
+2. Multilevel Inheritance
+3. Hierarchial Inheritance
+4. Multiple Inheritance (not allowed in java - ambiguity)
+5. Hybrid Inheritance
+
+
+RemoteWebDriver - get()
+Chrome - 
+Firefox - 
+Edge - 
+
+
+Access Specifiers:
+1. public - Global Level access (inside package (object, extends) + 
+		outside package (object, extends))
+2. protected - inside package (object, extends)+ outside package (extends)
+3. default - inside package (object, extends)
+4. private - within same class
+
+
+Polymorphism:
+ability to exist in multiple forms
+
+1. Overloading (Compile time polymorphism)
+	- Same class
+	- same method name
+	- But no. of arguments/ type of arguments would differ
+	
+Ex: sum(2, 3), sum(2,3,5)
+
+launchApp()
+launchApp(browserName)
+launchApp(browserName, env)
+launchAppWithFirefox()
+launchAppInUAT()
+
+2. Overriding (Inheritance) - Runtime polymorphism
+	- Different Class
+	- Same Method name
+	- no. of arguments/ type of arguments is also same
+	
+Abstraction:
+	- display only the relevant info to the end user
+	
+1. Interface
+	- Design document/ blueprint
+	- It's not implemented
+	- Keyword: implements
+	- 100% abstract (v1.7)
+	- Best pratice to have clean design and code principles
+	- cannot create object for interface
+2. Abstract Class
+	- Both implemented and unimplemented methods
+	- Keyword: abstract
+	- cannot create object
+
+
+Concrete Class
