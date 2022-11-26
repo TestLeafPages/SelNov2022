@@ -1,0 +1,49 @@
+Target Locators
+	- Alert
+	- Frames
+	- Handling Windows
+Tae Screenshot
+
+
+Alert: Popup/ dialog box which provides some information
+
+- Modal Dialog - Javascript alerts
+	- Simple Alert - Has only one button and text message
+		- getText() // to read the text message
+		- accept() // to clic on OK
+		
+	- Confirmation Alert - Has two buttons and text message
+		- getText() // to read the text message
+		- accept() // to click on OK
+		- dismiss() // to click on Cancel
+		
+	- Prompt Alert - Has two buttons and text message, input field
+		- getText() // to read the text message
+		- accept() // to click on OK
+		- dismiss() // to click on Cancel
+		- sendKeys() // to input text into alert
+	
+Characteristics:
+- Cannot inspect an alert
+- Cannot interact with main window until you handle the alert
+
+Exceptions:
+1. NoAlertPresentException
+2. UnhandledAlertException
+	
+- Non Modal Dialog
+	- Sweet Alert
+	
+Frames:
+- section of a webpage/ inner html structure (html inside another html)
+- frame/ iframe
+
+Exception:
+NoSuchFrameException
+
+
+Window Handling:
+NoSuchWindowException
+
+
+https://chromedriver.chromium.org/capabilities
