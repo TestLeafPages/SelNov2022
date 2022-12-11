@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	 <groups>
+		<run>
+			<exclude name="sanity"></exclude>
+			<include name="smoke"></include>
+			<include name="common"></include>
+			<!-- <include name="sanity"></include> -->
+		</run>
+	</groups>
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="week6.day2.LearnGroups" >
+				<!-- <methods>
+					<include name="createLead"></include>
+					<include name="editLead"></include>
+				</methods> -->
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

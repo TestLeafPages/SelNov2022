@@ -1,0 +1,29 @@
+TestNG - Test Execution Framework
+
+- Has the feature to perform Sequential execution
+- Has the feature to perform Parallel execution
+- Gives the status pass/ fail for the test execution
+- Gives test execution summary (HTML report)
+- Supports data driven - To execute a test for multiple data
+- Supports to retry of failed testcase
+- Supports cross browser testing
+- Can control the execution flow using Annotations and attributes
+- Assertions to handle the validations & verifications
+
+JUnit
+NUnit
+Pytest
+
+
+Annotations:
+
+@BeforeSuite - start report
+	@BeforeTest - Connecting to database
+		@BeforeClass - TC name, desc, author
+			@DataProvider
+				@BeforeMethod - Launch browser and login
+					@Test (mandatory)
+				@AfterMethod - Close browser
+		@AfterClass
+	@AfterTest - Disconnecting database
+@AfterSuite - stop report
