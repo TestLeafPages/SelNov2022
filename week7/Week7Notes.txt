@@ -1,0 +1,63 @@
+Cucumber - BDD (Behavioural Driven Development):
+JBehave
+SpecFlow
+
+
+Test Driven Development:
+	- Write the testcases first
+	- Get the approval for the testcases
+	- Development should be based on the testcases
+	
+Cons:
+	- Lot of negative testcases were covered rather than positive testcases
+	
+Acceptance Test Driven Development:
+	- Write the acceptance testcases first
+	- Develop the software based on the acceptance testcases
+	
+Cons:
+	- Communication gap between the technical and non-technical team
+	
+Behavioural Driven Development:
+	- To address the communication gap between tech and non-technical teams
+	- Write the acceptance testcases first using common language
+		(understandable to both tech and non-technical teams)
+		
+Gherin Keywords:
+
+Feature - Describes the functionality of an application
+Scenario - Describes a behaviour/ testcase
+Given - Represent a pre-condition
+When - Represent Test Condition/ Step
+Then - Represent the expected Result (for positive scenario)
+But - Represent the expected Result (for negative scenario)
+And - link two other test steps
+
+3 Layers:
+	- Features			- File to write the BDD testcases
+	- Step Defintions	- Implement the test steps using Java/ Selenium
+	- Runner			- TestNG for execution
+	
+Self Assessment:
+1. What are the layers in cucumber automation?
+	- features, step definitions, runner
+2. What is the cucumber options attribute to integrate step definitions?
+	- glue
+3. What is the significance of monochrome?
+	- to remove the jun characters in the result displayed in console
+4. What is the attribute used for generating report?
+	- publish
+5. What are the eywords used for test execution with multiple data?
+	- Scenario Outline and Examples
+6. What is the gherin keword which is used for precondition among the
+scenarios in feature file
+	- Background
+7. What is the exception when a step is not defined?
+	- UndefinedStepException
+8. What is the default runner for cucumber?
+	- JUnit
+	
+
+Assertion:
+1. Hard Assertion
+2. Soft Assertion
